@@ -13,9 +13,10 @@
           </div>
 
           <div class="section-content section-content--plain">
-            <div class="section-link">
-              <i class="section-link__icon material-icons">business</i>{{ person.contact.street }}
-            </div>
+            <a :href="person.contact.my_belgrade_pics" class="section-link">
+              <i class="section-link__icon material-icons">business</i>
+              {{ person.contact.street }}
+            </a>
 
             <a
               v-if="person.contact.website"
@@ -110,13 +111,13 @@
               <div class="section-content__text">{{ experience.timeperiod }}</div>
               
               <br>
-              <span class="section-content__text--light">{{ experience.description1 }}</span>
+              <span class="section-content__text--light">♠️ {{ experience.description1 }}</span>
               <br><br>
-              <span class="section-content__text--light">{{ experience.description2 }}</span>
+              <span class="section-content__text--light">♠️ {{ experience.description2 }}</span>
               <br><br>
-              <span class="section-content__text--light">{{ experience.description3 }}</span>
+              <span class="section-content__text--light">♠️ {{ experience.description3 }}</span>
               <br><br>
-              <span class="section-content__text--light">{{ experience.description4 }}</span>
+              <span class="section-content__text--light">♠️ {{ experience.description4 }}</span>
             </span>
           </div>
         </div>
@@ -130,14 +131,13 @@
           </div>
 
           <div class="section-content">
-            <span v-for="(project, index) in person.projects" :key="index"
+            <a v-for="(project, index) in person.projects" :key="index"
               class="section-content__item-grid"
               :href="project.url">
-              <span class="section-content__header"> {{ project.name }} </span>
+              <span class="section-content__header">♠️ {{ project.name }} </span>
               <span class="section-content__subheader">{{ project.platform }}</span>
-              <!-- <br> -->
               <span class="section-content__text"> {{ project.description }} </span>
-            </span>
+            </a>
           </div>
         </div>
       </div>
