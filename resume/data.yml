@@ -13,12 +13,14 @@ experience:
 - company: BalLab
   position: Software Developer
   timeperiod: "3+ years"
-  description1: "‣ I was part of the team creating an enterprise web application which is easy-to-use email, RFI and Submittal management system specific to design teams in the building industry. I was involved in making the core workflow of the application and high-speed file transfer mechanism. It is cloud-hosted on AWS. We used: Spring Boot, MySQL, Redis, Amazon S3."
-  description2: "
-‣ Migrated well established IoT solution from a monolithic J2EE application into a modern micro-services and Spring Boot based architecture."
-  description3: "
-‣ Developed a bridge application in Golang for processing a large amount of IoT data coming from various types of IoT devices and forward them to the Kafka cluster. Implemented a simulator for mocking different data types and values of IoT devices. We used: Golang, Kafka, ActiveMQ Artemis, Protobuf messages, Docker."
-  description4: "I have been dockerizing few projects from the ground up and made some simple automatization with Jenkins pipelines and JVM monitoring with Prometheus and Grafana."
+  description1: "〰️ 
+I was part of the team creating an enterprise web application which is easy-to-use email, RFI and Submittal management system specific to design teams in the building industry. I was involved in making the core workflow of the application and high-speed file transfer mechanism. It is cloud-hosted on AWS. We used: Spring Boot, MySQL, Redis, Amazon S3."
+  description2: "〰️
+Migrated well established IoT solution from a monolithic J2EE application into a modern micro-services and Spring Boot based architecture."
+  description3: "〰️
+Developed a bridge application in Golang for processing a large amount of IoT data coming from various types of IoT devices and forward them to the Kafka cluster. Implemented a simulator for mocking different data types and values of IoT devices. We used: Golang, Kafka, ActiveMQ Artemis, Protobuf messages, Docker."
+  description4: "〰️
+I have been dockerizing few projects from the ground up and made some simple automatization with Jenkins pipelines and JVM monitoring with Prometheus and Grafana."
   website: https://ballab.com
 
 education:
