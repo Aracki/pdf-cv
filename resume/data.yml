@@ -2,7 +2,7 @@
 name:
   first: Ivan
   last: Aracki
-about: Passionate about internet, open-source software, electronic music, camping, climbing and many more.
+about: "Passionate about internet, open-source software, electronic music, camping, climbing and many more."
 position: Software Developer
 
 birth:
@@ -37,15 +37,6 @@ projects:
   description: Personal minimalistic presentation
   url: https://github.com/Aracki/countgo
 
-hobbies:
-- name: Climbing
-  iconClass: fa fa-gamepad
-  url: https://example.com
-
-- name: Drawing
-  iconClass: fa fa-pencil
-  url: https://example.com
-
 contact:
   email: "aracki.ivan@gmail.com"
   street: "Belgrade"
@@ -54,6 +45,5 @@ contact:
   github: "Aracki"
   medium: aracki
   linkedin: ivan-aracki
-# en, de, fr, pt, ca, cn, it, es, th, pt-br, ru, sv, id, hu, pl, ja, ka, nl, he, zh-tw, lt, ko, el
 lang: en
 `

@@ -9,39 +9,6 @@
       <div class="content__left">
         <div class="section">
           <div class="section-headline">
-            {{ lang.about }}
-          </div>
-
-          <div class="section-content section-content--plain">
-            {{ person.about }}
-            <br/>
-            <br/>
-            {{ person.knowledge }}
-          </div>
-        </div>
-
-        <div
-          v-if="person.skills"
-          class="section">
-          <div class="section-headline">
-            {{ lang.skills }}
-          </div>
-
-          <div class="section-content-grid">
-            <a
-              v-for="(skill, index) in person.skills"
-              class="grid-item"
-              :key="index"
-              :href="skill.url">
-              <span class="squarred-grid-item">
-                {{ skill.name }}
-              </span>
-            </a>
-          </div>
-        </div>
-
-        <div class="section">
-          <div class="section-headline">
             {{ lang.contact }}
           </div>
 
@@ -76,6 +43,17 @@
               :href="'https://github.com/' + person.contact.github">
               <i class="section-link__icon fa fa-github"></i>{{ person.contact.github }}
             </a>
+          </div>
+
+          <br>
+        </div>
+        <div class="section">
+          <div class="section-headline">
+            {{ lang.about }}
+          </div>
+
+          <div class="section-content section-content--plain">
+            {{ person.about }}
           </div>
         </div>
       </div>
