@@ -1,73 +1,42 @@
 /* #*/ export const PERSON = `
 name:
-  first: John
-  middle:
-  last: Doe
-about: Hi, my name is John Doe. I"m just about the most boring type of person you could
-       possibly imagine. I like collecting leaves from the tree in my back yard and documenting
-       each time I eat a peanut that is non-uniform. I am not a robot. Please hire me.
+  first: Ivan
+  last: Aracki
+about: 
 position: Software Developer
 
 birth:
-  year: 1990
-  location: New York
+  year: 1992
+  location: Belgrade
 
 experience:
-- company: Company A
-  position: Developer
-  timeperiod: since January 2016
-  description: Programming and watching cute cat videos.
-  website: https://example.com
-
-- company: Company B
-  position: Frontend Developer
-  timeperiod: January 2015 - December 2015
-  description: Fulfillment of extremely important tasks.
-
-- company: Company C
-  position: Trainee
-  timeperiod: March 2014 - December 2014
-  description: Making coffee and baking cookies.
+- company: BalLab
+  position: Software Developer
+  timeperiod: "3+ years"
+  description1: "‣ I was part of the team creating an enterprise web application which is easy-to-use email, RFI and Submittal management system specific to design teams in the building industry. I was involved in making the core workflow of the application and high-speed file transfer mechanism. It is cloud-hosted on AWS. We used: Spring Boot, MySQL, Redis, Amazon S3."
+  description2: "
+‣ Migrated well established IoT solution from a monolithic J2EE application into a modern micro-services and Spring Boot based architecture."
+  description3: "
+‣ Developed a bridge application in Golang for processing a large amount of IoT data coming from various types of IoT devices and forward them to the Kafka cluster. Implemented a simulator for mocking different data types and values of IoT devices. We used: Golang, Kafka, ActiveMQ Artemis, Protobuf messages, Docker."
+  description4: "I have been dockerizing few projects from the ground up and made some simple automatization with Jenkins pipelines and JVM monitoring with Prometheus and Grafana."
+  website: https://ballab.com
 
 education:
-- degree: Master of Arts
-  timeperiod: March 2012 - December 2013
-  description: Major in Hacking and Computer Penetration, University A, New York, USA.
-  website: https://example.com
-
-- degree: Bachelor of Science
-  timeperiod: March 2009 - December 2011
-  description: Major in Engineering, University B, Los Angeles, USA.
-
-# skill level goes 0 to 100
-skills:
-- name: HTML5
-  level: 99
-- name: CSS3
-  level: 95
-- name: JavaScript
-  level: 97
-- name: Node.js
-  level: 93
-- name: Angular 2
-  level: 60
-- name: TypeScript
-  level: 80
-- name: ES.Next
-  level: 70
-- name: Docker
-  level: 99
-knowledge: Also proficient in Adobe Photoshop and Illustrator, grew up bilingual
-  (English and Klingon).
+- degree: Bachelor of Information Systems and Technologies
+  timeperiod: 2011-2015
+  university: Faculty of Organizational Sciences
 
 projects:
-- name: best-resume-ever
-  platform: Vue
-  description: 👔 💼 Build fast 🚀 and easy multiple beautiful resumes and create your best CV ever! Made with Vue and LESS.
-  url: https://github.com/salomonelli/best-resume-ever
+- name: Image processing serverless function
+  description: I have developed fast serverless function in Golang for image processing which was deployed on AWS.
+  url: https://github.com/Aracki/goimage
+
+- name: Personal website
+  description: Personal minimalistic presentation
+  url: https://github.com/Aracki/countgo
 
 hobbies:
-- name: Video Games
+- name: Climbing
   iconClass: fa fa-gamepad
   url: https://example.com
 
@@ -81,12 +50,13 @@ contributions:
   url: https://github.com/salomonelli/best-resume-ever
 
 contact:
-  email: john.doe@email.com
-  phone: 0123 456789
-  street: 1234 Broadway
-  city: New York
-  website: johndoe.com
-  github: johnyD
+  email: "aracki.ivan@gmail.com"
+  street: "Belgrade"
+  city: "Belgrade"
+  website: "http://aracki.me"
+  github: "Aracki"
+  medium: aracki
+  linkedin: ivan-aracki
 # en, de, fr, pt, ca, cn, it, es, th, pt-br, ru, sv, id, hu, pl, ja, ka, nl, he, zh-tw, lt, ko, el
 lang: en
 `

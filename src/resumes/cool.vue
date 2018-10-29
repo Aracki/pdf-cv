@@ -3,7 +3,6 @@
     <div class="banner">
       <div class="banner__fullname">{{ person.name.first }} {{ person.name.middle }} {{ person.name.last }}</div>
       <div class="banner__position">{{ person.position }}</div>
-      <div class="banner__location">{{ lang.born }} {{person.birth.year}} {{ lang.bornIn }} {{person.birth.location}}</div>
     </div>
 
     <div class="content">
@@ -57,10 +56,6 @@
               <i class="section-link__icon material-icons">mail</i>{{ person.contact.email }}
             </a>
 
-            <div class="section-link">
-              <i class="section-link__icon material-icons">phone</i>{{ person.contact.phone }}
-            </div>
-
             <a
               v-if="person.contact.website"
               class="section-link"
@@ -81,49 +76,18 @@
               :href="'https://github.com/' + person.contact.github">
               <i class="section-link__icon fa fa-github"></i>{{ person.contact.github }}
             </a>
-
-            <a
-              v-if="person.contact.medium"
-              class="section-link"
-              :href="'https://medium.com/@' + person.contact.medium">
-              <i class="section-link__icon fa fa-medium"></i>{{ person.contact.medium }}
-            </a>
           </div>
         </div>
       </div>
 
       <div class="content__right">
-        <div class="section">
-          <div class="section-headline">
-            <i class="section-headline__icon material-icons">work</i>{{ lang.experience }}
-          </div>
-
-          <div class="section-content">
-            <a
-              v-for="(experience, index) in person.experience"
-              :key="index"
-              class="section-content__item"
-              :href="experience.website">
-
-              <span class="section-content__header">{{ experience.position }}</span>
-              <span class="section-content__subheader">
-                {{ experience.company }}
-                <span class="section-content__plain">{{ experience.location }}</span>
-              </span>
-
-              <div class="section-content__text">{{ experience.timeperiod }}</div>
-              <span class="section-content__text--light">{{ experience.description }}</span>
-            </a>
-          </div>
-        </div>
-
-        <div class="section">
+         <div class="section">
           <div class="section-headline">
             <i class="section-headline__icon material-icons">school</i>{{ lang.education }}
           </div>
 
           <div class="section-content">
-            <a
+            <span
               v-for="(education, index) in person.education"
               class="section-content__item"
               :key="index"
@@ -133,8 +97,39 @@
               <span class="section-content__subheader">{{ education.degree }}</span>
               <span class="section-content__text"> {{ education.timeperiod }} </span>
               <span class="section-content__text--light"> {{ education.description }} </span>
-            </a>
+            </span>
           </div>
+
+        <div class="section">
+          <div class="section-headline">
+            <i class="section-headline__icon material-icons">work</i>{{ lang.experience }}
+          </div>
+
+          <div class="section-content">
+            <span
+              v-for="(experience, index) in person.experience"
+              :key="index"
+              class="section-content__item">
+
+              <span class="section-content__header">{{ experience.position }}</span>
+              <span class="section-content__subheader">
+                {{ experience.company }}
+                <span class="section-content__plain">{{ experience.location }}</span>
+              </span>
+
+              <div class="section-content__text">{{ experience.timeperiod }}</div>
+              
+              <br>
+              <span class="section-content__text--light">{{ experience.description1 }}</span>
+              <br><br>
+              <span class="section-content__text--light">{{ experience.description2 }}</span>
+              <br><br>
+              <span class="section-content__text--light">{{ experience.description3 }}</span>
+              <br><br>
+              <span class="section-content__text--light">{{ experience.description4 }}</span>
+            </span>
+          </div>
+        </div>
         </div>
 
         <div
