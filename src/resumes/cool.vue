@@ -97,10 +97,10 @@
               class="section-content__item">
 
               <span class="section-content__header">{{ experience.position }}</span>
-              <span class="section-content__subheader">
+              <a class="section-content__subheader" :href="person.contact.job">
                 {{ experience.company }}
                 <span class="section-content__plain">{{ experience.location }}</span>
-              </span>
+              </a>
 
               <div class="section-content__text">{{ experience.timeperiod }}</div>
               
@@ -121,7 +121,7 @@
           v-if="person.projects"
           class="section">
           <div class="section-headline">
-            <i class="section-headline__icon material-icons">code</i>{{ lang.projects }}
+            <i class="section-headline__icon material-icons">code</i>Side projects
           </div>
 
           <div class="section-content">
@@ -130,29 +130,8 @@
               :href="project.url">
               <span class="section-content__header"> {{ project.name }} </span>
               <span class="section-content__subheader">{{ project.platform }}</span>
+              <!-- <br> -->
               <span class="section-content__text"> {{ project.description }} </span>
-            </span>
-          </div>
-        </div>
-
-        <div
-          v-if="person.contributions"
-          class="section">
-          <div class="section-headline">
-            <i class="section-headline__icon fa fa-heart"></i>{{lang.contributions}}
-          </div>
-
-          <div class="section-content-grid">
-            <span
-              v-for="(contribution, index) in person.contributions"
-              class="section-content__item-grid"
-              :key="index"
-              :href="contribution.url">
-              <span class="section-content__header"> {{ contribution.name }} </span>
-              <span class="section-content__text"> {{ contribution.description }} </span>
-              <span class="section-content__text--light" style="word-break: break-all;">
-                {{ contribution.url }}
-              </span>
             </span>
           </div>
         </div>
