@@ -139,14 +139,14 @@
             <i class="section-headline__icon material-icons">code</i>{{ lang.projects }}
           </div>
 
-          <div class="section-content-grid">
-            <a v-for="(project, index) in person.projects" :key="index"
+          <div class="section-content">
+            <span v-for="(project, index) in person.projects" :key="index"
               class="section-content__item-grid"
               :href="project.url">
               <span class="section-content__header"> {{ project.name }} </span>
               <span class="section-content__subheader">{{ project.platform }}</span>
               <span class="section-content__text"> {{ project.description }} </span>
-            </a>
+            </span>
           </div>
         </div>
 
@@ -158,7 +158,7 @@
           </div>
 
           <div class="section-content-grid">
-            <a
+            <span
               v-for="(contribution, index) in person.contributions"
               class="section-content__item-grid"
               :key="index"
@@ -168,7 +168,7 @@
               <span class="section-content__text--light" style="word-break: break-all;">
                 {{ contribution.url }}
               </span>
-            </a>
+            </span>
           </div>
         </div>
       </div>

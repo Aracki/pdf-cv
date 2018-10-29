@@ -2,7 +2,7 @@
 name:
   first: Ivan
   last: Aracki
-about: 
+about: Passionate about internet, open-source software, electronic music, camping, climbing and many more.
 position: Software Developer
 
 birth:
@@ -32,6 +32,10 @@ projects:
 - name: Image processing serverless function
   description: I have developed fast serverless function in Golang for image processing which was deployed on AWS.
   url: https://github.com/Aracki/goimage
+
+- name: Personal website
+  description: Personal minimalistic presentation
+  url: https://github.com/Aracki/countgo
 
 - name: Personal website
   description: Personal minimalistic presentation
