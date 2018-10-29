@@ -37,10 +37,6 @@ projects:
   description: Personal minimalistic presentation
   url: https://github.com/Aracki/countgo
 
-- name: Personal website
-  description: Personal minimalistic presentation
-  url: https://github.com/Aracki/countgo
-
 hobbies:
 - name: Climbing
   iconClass: fa fa-gamepad
@@ -49,11 +45,6 @@ hobbies:
 - name: Drawing
   iconClass: fa fa-pencil
   url: https://example.com
-
-contributions:
-- name: best-resume-ever
-  description: 👔 💼 Build fast 🚀 and easy multiple beautiful resumes.
-  url: https://github.com/salomonelli/best-resume-ever
 
 contact:
   email: "aracki.ivan@gmail.com"
