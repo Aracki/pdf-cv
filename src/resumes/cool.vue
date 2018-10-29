@@ -18,16 +18,17 @@
             </div>
 
             <a
-              class="section-link"
-              :href="'mailto:' + person.contact.email">
-              <i class="section-link__icon material-icons">mail</i>{{ person.contact.email }}
-            </a>
-
-            <a
               v-if="person.contact.website"
               class="section-link"
               :href="person.contact.website">
               <i class="section-link__icon fa fa-globe"></i>{{ person.contact.website }}
+            </a>
+
+            <a
+              v-if="person.contact.github"
+              class="section-link"
+              :href="'https://github.com/' + person.contact.github">
+              <i class="section-link__icon fa fa-github"></i>{{ person.contact.github }}
             </a>
 
             <a
@@ -40,8 +41,14 @@
             <a
               v-if="person.contact.github"
               class="section-link"
-              :href="'https://github.com/' + person.contact.github">
-              <i class="section-link__icon fa fa-github"></i>{{ person.contact.github }}
+              :href="'https://stackoverflow.com/' + person.contact.stackoverflow">
+              <i class="section-link__icon fa fa-stack-overflow"></i>ivan-aracki
+            </a>
+
+            <a
+              class="section-link"
+              :href="'mailto:' + person.contact.email" style="padding-right: 3px">
+              <i class="section-link__icon material-icons">mail</i>{{ person.contact.email }}
             </a>
           </div>
 
