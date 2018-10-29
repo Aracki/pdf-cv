@@ -47,9 +47,14 @@
 
             <a
               class="section-link"
-              :href="'mailto:' + person.contact.email" style="padding-right: 3px">
+              :href="'mailto:' + person.contact.email">
               <i class="section-link__icon material-icons">mail</i>{{ person.contact.email }}
             </a>
+
+            <a class="section-link" :href="'tel:' + person.contact.phone" >
+              <i class="section-link__icon material-icons">phone</i>{{ person.contact.phone }}
+            </a>
+
           </div>
 
           <br>
