@@ -20,7 +20,7 @@ Worked in a team who was doing migration of well established IoT solution from a
   description3: "
 Developed a bridge application in Golang for processing a large amount of data coming from various types of IoT devices and forward them to the Kafka cluster. Implemented a simulator for mocking different data types and values of IoT devices. We used: Golang, Kafka, ActiveMQ Artemis, MQTT protocol and Protobuf messages."
   description4: "
-Have been dockerizing few Java projects from the ground up and made some simple automatization with Jenkins pipelines and JVM monitoring with Prometheus and Grafana."
+Have been dockerizing few Java projects from the ground up and made some simple automatization with Jenkins pipelines and JVM monitoring with Prometheus and Grafana. Now I am working in DevOps team which is setting up and maintaining Kubernetes clusters on AWS & Google Cloud Platform."
   website: https://ballab.com
 
 education:
@@ -41,9 +41,8 @@ contact:
   email: "aracki.ivan@gmail.com"
   phone: "+381631990090"
   street: "Belgrade"
-  my_belgrade_pics: "https://www.instagram.com/explore/locations/598161887186596/lepi-beograd/"
   city: "Belgrade"
-  website: "http://aracki.me"
+  website: "https://aracki.me"
   github: "Aracki"
   stackoverflow: "users/2884309/ivan-aracki?tab=profile"
   linkedin: ivan-aracki
